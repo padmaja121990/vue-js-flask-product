@@ -8,8 +8,8 @@ export default new Router({
     routes: [
     {
         path: '/',
-        name: 'products',
-        component:() => import("../components/Products")
+        name: 'users',
+        component:() => import("../components/Users")
     },
     {
         path: '/create',
