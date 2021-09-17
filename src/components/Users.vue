@@ -2,16 +2,20 @@
   <table border=2px>
     <thead>
       <tr>
-        <th> Name</th>
-        <th>Email</th>
-        <th>Company</th>
+        <th> Id</th>
+        <th>Title</th>
+        <th>Completed</th>
+        <th>Operation</th>
       </tr>
     </thead>
     <tbody>
-      <tr v-for="user in users" :key= "user.id">
-        <td>{{user.name}}</td>
-        <td>{{user.email}}</td>
-        <td>{{user.company.name}}</td>
+      <tr v-for="user in users" :key= "user.UserId">
+        <td>{{user.id}}</td>
+        <td>{{user.title}}</td>
+        <td>{{user.completed}}</td>
+        <td><button class="badge badge-danger mr-2" @click="deleteUser">Delete</button>
+            <button type="submit" class="badge badge-success" @click="updateUser">Update</button>
+        </td>
       </tr>
     </tbody>
   </table>

@@ -5,7 +5,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <router-link class="btn btn-primary" aria-current="page" to='/'>Products</router-link>
+          <router-link class="btn btn-primary" aria-current="page" to='/'>Users</router-link>
         </li>
         <li class="nav-item">
           <router-link class="btn btn-success" to='/create'>Create</router-link>

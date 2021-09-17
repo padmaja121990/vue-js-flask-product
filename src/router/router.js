@@ -19,12 +19,12 @@ export default new Router({
     {
         path: '/get',
         name: 'get',
-        component: () => import("../components/getProduct")
+        component: () => import("../components/getUserId")
     },
     {
         path: '/post',
-        name: 'postproducts',
-        component: () => import("../components/PostProduct")
+        name: 'postuser',
+        component: () => import("../components/PostUser")
     }             
 ]
 })
