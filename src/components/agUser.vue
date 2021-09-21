@@ -9,6 +9,7 @@
 <script>
 import { AgGridVue } from "ag-grid-vue";
 import Vue from "vue";
+import 'ag-grid-enterprice'
 
 export default{
     name:'agUser',
@@ -24,6 +25,7 @@ export default{
     beforeMount() {
         this.columnDefs = [
             { field: 'id' },
+            {field:'userId',rowGroup: true, hide: true}
             { field: 'title' },
             { field: 'completed' }
         ];
@@ -38,7 +40,7 @@ export default{
 <style scoped>
 
 
-    .grid {
-        height: 255px;
-    }
+.grid {
+    height: 255px;
+}
 </style>
